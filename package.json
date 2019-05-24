@@ -15,12 +15,9 @@
     "zone.js": "^0.8.29"
   },
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint": "ng lint"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
