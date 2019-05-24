@@ -1,12 +1,12 @@
 .filter {
-  padding: 3px;
+	padding: 3px;
 }
 
 .filter span {
-  min-width: 200px;
-  display: inline-block;
+	display: inline-block;
+	min-width: 200px;
 }
 
 .filter input {
-    margin: 0 10px;
-  }
+	margin: 0 10px;
+}

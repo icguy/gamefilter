@@ -1,19 +1,19 @@
 <div>
 	<div class="filter">
 		<span>Név:</span>
-    <input [formControl]="nameControl">
-  </div>
-  <div class="filter">
-    <span>Játékosok száma:</span>
-    <input type="number" [formControl]="numberControl">
-  </div>
-  <div class="filter">
-    <span>Max időtartam (perc):</span>
-    <input type="number" [formControl]="durationControl">
-  </div>
+		<input [formControl]="nameControl">
+	</div>
+	<div class="filter">
+		<span>Játékosok száma:</span>
+		<input type="number" [formControl]="numberControl">
+	</div>
+	<div class="filter">
+		<span>Max időtartam (perc):</span>
+		<input type="number" [formControl]="durationControl">
+	</div>
 </div>
 <div class="game-list">
-  <div class="game">
-    <app-game *ngFor="let game of games" [game]="game"></app-game>
-  </div>
+	<div class="game">
+		<app-game *ngFor="let game of games" [game]="game"></app-game>
+	</div>
 </div>
