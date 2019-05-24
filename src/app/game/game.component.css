@@ -1,4 +1,4 @@
-.container {
+.game-container {
 	align-items: center;
 	background-color: #03396c;
 	border-radius: 10px;
@@ -10,11 +10,11 @@
 	padding: 15px;
 }
 
-.name {
+.game-container .name {
 	font-weight: bold;
 	padding-top: 10px;
 }
 
-.description {
+.game-container .description {
 	padding-top: 15px;
 }
