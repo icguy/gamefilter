@@ -1,0 +1,19 @@
+<a [href]="getGameLink()">
+	<div class="container">
+		<img [src]="getImage()">
+    <div>
+      <div class="name">
+        Név: {{game.name}}
+        </div>
+      <div class="players">
+        Játékosok: {{game.minPlayers}} - {{game.maxPlayers}} fő
+        </div>
+      <div class="duration">
+        Időtartam: {{game.durationInMinutes}} perc
+        </div>
+      <div class="description">
+        {{game.description}}
+      </div>
+    </div>
+  </div>
+</a>
