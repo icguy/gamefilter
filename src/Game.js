@@ -1,4 +1,5 @@
 import React from "react";
+import "./Game.css";
 
 const hexChars = "0123456789abcdef";
 
@@ -21,22 +22,20 @@ function getGameLink(gameName) {
 
 export function Game(props) {
 	return (
-		<a href={getGameLink(props.game.name)} >
-			<div className="game-container">
-				<img src={getImage(props.game.name)} />
-				<div>
-					<div className="name">
-						Név: {props.game.name}
+		<a className="game-container" href={getGameLink(props.game.name)} >
+			<img src={getImage(props.game.name)} />
+			<div>
+				<div className="name">
+					Név: {props.game.name}
+				</div>
+				<div className="players">
+					Játékosok: {props.game.minPlayers} - {props.game.maxPlayers} fő
 					</div>
-					<div className="players">
-						Játékosok: {props.game.minPlayers} - {props.game.maxPlayers} fő
+				<div className="duration">
+					Időtartam: {props.game.durationInMinutes} perc
 					</div>
-					<div className="duration">
-						Időtartam: {props.game.durationInMinutes} perc
-					</div>
-					<div className="description">
-						{props.game.description}
-					</div>
+				<div className="description">
+					{props.game.description}
 				</div>
 			</div>
 		</a >
